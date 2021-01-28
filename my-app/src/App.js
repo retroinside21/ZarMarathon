@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hellp world
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import  Header from './components/Header/header.js';
+import Layout from './components/Layout/Layuot';
+import Footer from './components/Footer/Footer'
+
+const App  = () => {
+  return ( 
+    <>
+      <Header />
+     <Layout   
+     id="id" 
+     title="Abot game" 
+     desc="lorem ipsun"
+     urlBg />
+     <Layout  title="Abot game" desc="lorem ipsun"  />
+     <Layout  title="Abot game" desc="lorem ipsun"  />
+     <Footer />
+</>
+);
 }
 
 export default App;
